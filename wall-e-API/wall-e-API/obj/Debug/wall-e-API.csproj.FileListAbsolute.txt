@@ -29,7 +29,6 @@ M:\project\wall-e-API\wall-e-API\wall-e-API\bin\wall-e-API.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\wall-e-API.pdb
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csprojResolveAssemblyReference.cache
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.pdb
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Nancy.dll
