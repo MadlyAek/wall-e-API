@@ -94,8 +94,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\AccountService.cs" />
     <Content Include="App_Code\config.cs" />
     <Compile Include="App_Code\ConfigData.cs" />
+    <Compile Include="Control\AccountControl.cs" />
     <Compile Include="Control\_main.cs" />
     <Compile Include="Migrations\201806190405555_first.cs" />
     <Compile Include="Migrations\201806190405555_first.Designer.cs">

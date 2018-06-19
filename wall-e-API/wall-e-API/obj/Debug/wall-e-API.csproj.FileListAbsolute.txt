@@ -44,3 +44,4 @@ M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csproj.Generate
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.pdb
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall_e_API.Migrations.addcreatemigrationuserinfoandaccountinfo.resources
+M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csprojResolveAssemblyReference.cache
