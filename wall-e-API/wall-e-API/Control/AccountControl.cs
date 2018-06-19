@@ -77,6 +77,7 @@ namespace wall_e_API.Control
                     status = true;
                     context db = new context();
 
+                    Money = Convert.ToDouble(MoneyTmp);
                     AccountService accser = new AccountService();
                     obj = accser.getTranfer(db, AccountNo, AccountNoTranfer, Money);
                 }

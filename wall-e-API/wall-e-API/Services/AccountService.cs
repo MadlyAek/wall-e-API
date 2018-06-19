@@ -42,6 +42,11 @@ namespace wall_e_API
                     ;
 
                     status = Tranfer(lai, laiTran, Money);
+                    if (status) {
+                        lai.Balance = lai.Balance - Money;
+                        laiTran.Balance = laiTran.Balance + Money;
+                        db.SaveChanges();
+                    }
 
                 } else {
                     status = false;
@@ -65,8 +70,8 @@ namespace wall_e_API
             {
                 if ((AccountNoTranfer.Balance + Money) <= accountMaximum)
                 {
-                    AccountNo.Balance = AccountNo.Balance - Money;
-                    AccountNoTranfer.Balance = AccountNoTranfer.Balance + Money;
+                    //AccountNo.Balance = AccountNo.Balance - Money;
+                    //AccountNoTranfer.Balance = AccountNoTranfer.Balance + Money;
 
                     status = true;
                     message = "success";
