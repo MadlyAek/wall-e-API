@@ -32,11 +32,12 @@ namespace wall_e_API
                 .Where(o => o.No == AccountNo)
                 .FirstOrDefault()
                 ;
+            walle_AccountInfo laiTran = null;
 
             if (lai != null) {
                 if (lai.Balance >= Money) {
 
-                    walle_AccountInfo laiTran = db.walle_AccountInfos
+                    laiTran = db.walle_AccountInfos
                     .Where(o => o.No == AccountNoTranfer)
                     .FirstOrDefault()
                     ;
@@ -58,6 +59,9 @@ namespace wall_e_API
             {
                 status = status,
                 message = message,
+                AccountNo = lai,
+                AccountNoTranfer = laiTran,
+                money = Money
             };
         }
 
