@@ -101,13 +101,22 @@
     <Compile Include="Migrations\201806190405555_first.Designer.cs">
       <DependentUpon>201806190405555_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806190421033_add create migration userinfo and accountinfo.cs" />
+    <Compile Include="Migrations\201806190421033_add create migration userinfo and accountinfo.Designer.cs">
+      <DependentUpon>201806190421033_add create migration userinfo and accountinfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\walle_AccountInfo.cs" />
+    <Compile Include="Models\walle_UserInfo.cs" />
     <Compile Include="Models\_context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806190405555_first.resx">
       <DependentUpon>201806190405555_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806190421033_add create migration userinfo and accountinfo.resx">
+      <DependentUpon>201806190421033_add create migration userinfo and accountinfo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

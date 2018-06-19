@@ -13,5 +13,9 @@ namespace wall_e_API
         public context() : base(ConfigData.ConnectionString()) {
 
         }
+
+        public DbSet<walle_UserInfo> walle_UserInfos { get; set; }
+        public DbSet<walle_AccountInfo> walle_AccountInfos { get; set; }
+
     }
 }
