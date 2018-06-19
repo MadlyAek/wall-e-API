@@ -22,5 +22,67 @@ namespace wall_e_API
                 lwalle_AccountInfo = lai
             };
         }
+
+        public object getTranfer(context db, string AccountNo, string AccountNoTranfer, double Money)
+        {
+            bool status = false;
+            string message = string.Empty;
+
+            walle_AccountInfo lai = db.walle_AccountInfos
+                .Where(o => o.No == AccountNo)
+                .FirstOrDefault()
+                ;
+
+            if (lai != null) {
+                if (lai.Balance >= Money) {
+
+                    walle_AccountInfo laiTran = db.walle_AccountInfos
+                    .Where(o => o.No == AccountNoTranfer)
+                    .FirstOrDefault()
+                    ;
+
+
+
+                } else {
+                    status = false;
+                    message = "Balance < Money*";
+                }
+            }
+
+            return new
+            {
+                status = status,
+                message = message,
+            };
+        }
+
+        public bool Tranfer(walle_AccountInfo AccountNo, walle_AccountInfo AccountNoTranfer, double Money) {
+            bool status = false;
+            string message = string.Empty;
+            double accountMaximum = 5000;
+
+            if (AccountNo.Balance >= Money)
+            {
+                if ((AccountNoTranfer.Balance + Money) <= accountMaximum)
+                {
+                    AccountNo.Balance = AccountNo.Balance - Money;
+                    AccountNoTranfer.Balance = AccountNoTranfer.Balance + Money;
+
+                    status = true;
+                    message = "success";
+                }
+                else {
+                    status = false;
+                    message = "over accountMaximum";
+                }
+            }
+            else
+            {
+                status = false;
+                message = "source < money";
+            }
+
+            return status;
+        }
     }
 }
