@@ -41,7 +41,7 @@ namespace wall_e_API
                     .FirstOrDefault()
                     ;
 
-
+                    status = Tranfer(lai, laiTran, Money);
 
                 } else {
                     status = false;
