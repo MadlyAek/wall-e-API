@@ -33,6 +33,8 @@ namespace wall_e_API
                 .FirstOrDefault()
                 ;
             walle_AccountInfo laiTran = null;
+            walle_UserInfo user = null;
+            walle_UserInfo userTran = null;
 
             if (lai != null) {
                 if (lai.Balance >= Money) {
@@ -49,6 +51,16 @@ namespace wall_e_API
                         db.SaveChanges();
                     }
 
+                    user = db.walle_UserInfos
+                        .Where(o => o.ID == lai.walle_UserInfo)
+                        .FirstOrDefault()
+                        ;
+
+                    userTran = db.walle_UserInfos
+                        .Where(o => o.ID == laiTran.walle_UserInfo)
+                        .FirstOrDefault()
+                        ;
+
                 } else {
                     status = false;
                     message = "Balance < Money*";
@@ -61,6 +73,8 @@ namespace wall_e_API
                 message = message,
                 AccountNo = lai,
                 AccountNoTranfer = laiTran,
+                UserInfo = user,
+                UserInfoTran = userTran,
                 money = Money
             };
         }
