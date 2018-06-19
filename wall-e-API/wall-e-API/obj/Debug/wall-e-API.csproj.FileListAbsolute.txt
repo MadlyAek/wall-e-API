@@ -37,3 +37,9 @@ M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Nancy.xml
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Nancy.Hosting.Aspnet.xml
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Newtonsoft.Json.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Newtonsoft.Json.xml
+M:\project\wall-e-API\wall-e-API\wall-e-API\bin\EntityFramework.dll
+M:\project\wall-e-API\wall-e-API\wall-e-API\bin\EntityFramework.SqlServer.dll
+M:\project\wall-e-API\wall-e-API\wall-e-API\bin\EntityFramework.xml
+M:\project\wall-e-API\wall-e-API\wall-e-API\bin\EntityFramework.SqlServer.xml
+M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall_e_API.Migrations.first.resources
+M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csproj.GenerateResource.Cache
