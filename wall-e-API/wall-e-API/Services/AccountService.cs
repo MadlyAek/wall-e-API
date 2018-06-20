@@ -45,7 +45,6 @@ namespace wall_e_API
                     ;
 
                     status = Tranfer(ref lai, ref laiTran, Money);
-                    db.SaveChanges();
 
                     user = db.walle_UserInfos
                         .Where(o => o.ID == lai.walle_UserInfo)

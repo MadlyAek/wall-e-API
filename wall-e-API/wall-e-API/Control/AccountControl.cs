@@ -80,6 +80,7 @@ namespace wall_e_API.Control
                     Money = Convert.ToDouble(MoneyTmp);
                     AccountService accser = new AccountService();
                     obj = accser.getTranfer(db, AccountNo, AccountNoTranfer, Money);
+                    db.SaveChanges();
                 }
 
                 return this.Response.AsJson(new
