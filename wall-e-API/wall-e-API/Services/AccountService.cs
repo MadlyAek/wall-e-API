@@ -44,12 +44,8 @@ namespace wall_e_API
                     .FirstOrDefault()
                     ;
 
-                    status = Tranfer(lai, laiTran, Money);
-                    if (status) {
-                        lai.Balance = lai.Balance - Money;
-                        laiTran.Balance = laiTran.Balance + Money;
-                        db.SaveChanges();
-                    }
+                    status = Tranfer(ref lai, ref laiTran, Money);
+                    db.SaveChanges();
 
                     user = db.walle_UserInfos
                         .Where(o => o.ID == lai.walle_UserInfo)
@@ -79,7 +75,7 @@ namespace wall_e_API
             };
         }
 
-        public bool Tranfer(walle_AccountInfo AccountNo, walle_AccountInfo AccountNoTranfer, double Money) {
+        public bool Tranfer(ref walle_AccountInfo AccountNo, ref walle_AccountInfo AccountNoTranfer, double Money) {
             bool status = false;
             string message = string.Empty;
             double accountMaximum = 5000;
@@ -88,8 +84,8 @@ namespace wall_e_API
             {
                 if ((AccountNoTranfer.Balance + Money) <= accountMaximum)
                 {
-                    //AccountNo.Balance = AccountNo.Balance - Money;
-                    //AccountNoTranfer.Balance = AccountNoTranfer.Balance + Money;
+                    AccountNo.Balance = AccountNo.Balance - Money;
+                    AccountNoTranfer.Balance = AccountNoTranfer.Balance + Money;
 
                     status = true;
                     message = "success";

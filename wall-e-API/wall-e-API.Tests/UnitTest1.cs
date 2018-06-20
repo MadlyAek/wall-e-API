@@ -28,10 +28,12 @@ namespace wall_e_API.Tests
 
             //act
             AccountService api = new AccountService();
-            bool actual = api.Tranfer(sour, des, tranferMoney);
+            bool actual = api.Tranfer(ref sour, ref des, tranferMoney);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual,"status");
+            Assert.AreEqual(0, sour.Balance, "sour");
+            Assert.AreEqual(3000, des.Balance, "des");
         }
         [TestMethod]
         public void tranfer_when_source_5000_des_2000_tran_3000_success()
@@ -55,10 +57,12 @@ namespace wall_e_API.Tests
 
             //act
             AccountService api = new AccountService();
-            bool actual = api.Tranfer(sour, des, tranferMoney);
+            bool actual = api.Tranfer(ref sour, ref des, tranferMoney);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, "status");
+            Assert.AreEqual(2000, sour.Balance, "sour");
+            Assert.AreEqual(5000, des.Balance, "des");
         }
     }
 }

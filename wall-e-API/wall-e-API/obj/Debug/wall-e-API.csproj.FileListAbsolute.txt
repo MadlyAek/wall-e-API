@@ -40,8 +40,8 @@ M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Nancy.xml
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Nancy.Hosting.Aspnet.xml
 M:\project\wall-e-API\wall-e-API\wall-e-API\bin\Newtonsoft.Json.xml
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall_e_API.Migrations.first.resources
+M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall_e_API.Migrations.addcreatemigrationuserinfoandaccountinfo.resources
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csproj.GenerateResource.Cache
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.dll
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.pdb
-M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall_e_API.Migrations.addcreatemigrationuserinfoandaccountinfo.resources
 M:\project\wall-e-API\wall-e-API\wall-e-API\obj\Debug\wall-e-API.csprojResolveAssemblyReference.cache
